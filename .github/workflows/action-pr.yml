@@ -1,9 +1,11 @@
-name: Github Actions Example
+name: Pull Request Action
 on:
   pull_request:
+    paths:
+      - 'develop'
+      - 'master'
     branches: 
-        - develop
-        - master
+      - master
 jobs:
   build:
     name: Build pull request
