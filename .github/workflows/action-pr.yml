@@ -4,6 +4,9 @@ on:
     paths:
       - 'develop'
       - 'master'
+    branches: 
+      - master
+      - develop
 jobs:
   build:
     name: Build pull request
